@@ -5,7 +5,12 @@ h1{
 --cor-de-fundo: blue;
 --verde: green;
 --branco: white;
---
+--botao-ativo:black;
+--botao-inativo:black;
+--texto-fundo:black;
+}
 
-
+body {
+    background-color: var(--cor-de-fundo);
+    color:var(--branco):
 }
