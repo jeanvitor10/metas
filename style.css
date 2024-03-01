@@ -3,9 +3,9 @@ h1{
 }
 :root{
 --cor-de-fundo: blue;
---verde: green;
+--verde: rgba(9, 0, 128, 0);
 --branco: white;
---botao-ativo:black;
+--botao-ativo:rgba(255, 255, 255, 0.493);
 --botao-inativo:black;
 --texto-fundo:black;
 }
