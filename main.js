@@ -21,3 +21,6 @@ let segundo = tempofinal1/1000;
 let minutos = segundo/60;
 let horas = minutos/60;
 let dias = horas/24;
+
+contadores[0].textoContent =dia + "dias" + horas + "horas" +
+minutos + "minutoas" +  segudos + 
