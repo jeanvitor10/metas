@@ -1,14 +1,4 @@
 const botoes = document.querySelectorAll(".botao");
-
-for(let i=0;i <botoes.length;i++){
-    botoes[i].onclick = function(){
-        for(let j=0;j<botoes.length;j++){
-            botoes[j].classList.remove("ativo");
-        }
-        botoes[i].classList.add("ativo");
-    }
-}
-const botoes = document.querySelectorAll(".botao");
 const textos = document.querySelectorAll(".aba-conteudo");
 
 for (let i = 0; i < botoes.length; i++) {
@@ -44,9 +34,14 @@ function calculaTempo(tempoObjetivo) {
     minutos %= 60;   //obtem o resto da divisão dos minutos
     horas %= 24;    //obtem o resto da divisão das horas
 
-//i n s i r o  código  do   IF   e ELSE aqui}
+    if (tempoFinal > 0){
+      return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos";
+  } else {
+      return "Prazo Finalizado";
+  }
 
-//INSIRA O RESTO DO CÓDIGO AQUi
+}
+
 
 
 }
