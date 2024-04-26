@@ -1,59 +1,38 @@
 const botoes = document.querySelectorAll(".botao");
-const textos = document.querySelectorAll(".aba-conteudo")
 
-for(let i=0;i <botoes.length;++){  
-  botoes[i].inclick = function(){
-    for(let j=0;<botoes.length;j++){
-        botoes[j].classList.remove("ativo");
-        textos[j].classList.remove('ativo')
-    }
-    botoes[i].classList.add("ativo");
-    textos[i].classList.add("ativo");
-  }
-}
-const contador = document.querySelectorAll(".contador");
-const tempoObjetivo1 = new date("2024-12-21t00:00:00");
-let tempoAtual = new date();
-contadores[0].textoContent = tempoAtual;  
-
-let tempofinal = tempoOjetivol - tempoAtual;
-let segundo = tempofinal1/1000;
-let minutos = segundo/60;
-let horas = minutos/60;
-let dias = horas/24;
-
-contadores[0].textoContent =dia + "dias" + horas + "horas" +
-minutos + "minutoas" +  segudos + "segudos";]
-const botoes = document.querySelectorAll(".botao");
-const textos = document.querySelectorAll(".aba-conteudo");
-
-for (let i = 0; i < botoes.length; i++) {
-    botoes[i].onclick = function () {
-
-        for (let j = 0; j < botoes.length; j++) {
+for(let i=0;i <botoes.length;i++){
+    botoes[i].onclick = function(){
+        for(let j=0;j<botoes.length;j++){
             botoes[j].classList.remove("ativo");
-            textos[j].classList.remove("ativo");
         }
-
         botoes[i].classList.add("ativo");
-        textos[i].classList.add("ativo");
     }
 }
-//cria as constantes e a lista "tempo" dos objetivos ou metas
-const contadores = document.querySelectorAll(".contador");
-const tempoObjetivo1 = new Date("2024-02-02T00:00:00");
-const tempoObjetivo2 = new Date("2024-12-15T00:00:00");
-const tempoObjetivo3 = new Date("2024-11-30T00:00:00");
-const tempoObjetivo4 = new Date("2024-06-30T00:00:00");
-//constante da lista dos tempos de objetivo
-const tempos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];
+metas.html
 
-function calculaTempo(tempoObjetivo) {
-    let tempoAtual = new Date(); //obtem a data atual
-    let tempoFinal = tempoObjetivo - tempoAtual; //calcula o tempo final restante
-    let segundos = Math.floor(tempoFinal / 1000); //calcula os segundos restantes
-    let minutos = Math.floor(segundos / 60);//calcula os minutos restantes
-    let horas = Math.floor(minutos / 60);//calcula as horas restantes
-    let dias = Math.floor(horas / 24);//calcula os dias restantes
-   
-    segundos %= 60;  //obtem o resto da divisão do
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metas 2024</title>
+    <link rel="stylesheet" href="style-metas.css">
+</head>
+
+<body>
+    <section class="conteudo-principal">
+        <h2 class="titulo-principal">Minhas metas para este ano<span>_</span></h2>
+        <div class="botoes">
+            <button class="botao ativo">Emagrecer</button>
+            <button class="botao ">Passar de Ano</button>
+            <button class="botao ">Passar no vestibular</button>
+            <button class="botao ">Conseguir um emprego</button>
+        </div>
+    </section>
+
+ 
+    <script src="main.js"></script>
+</body>
+
+</html>
