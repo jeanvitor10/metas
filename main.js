@@ -29,6 +29,8 @@ function calculaTempo(tempoObjetivo) {
     let minutos = Math.floor(segundos / 60);//calcula os minutos restantes
     let horas = Math.floor(minutos / 60);//calcula as horas restantes
     let dias = Math.floor(horas / 24);//calcula os dias restantes
+    
+
    
     segundos %= 60;  //obtem o resto da divisão dos segundos
     minutos %= 60;   //obtem o resto da divisão dos minutos
@@ -39,6 +41,8 @@ function calculaTempo(tempoObjetivo) {
   } else {
       return "Prazo Finalizado";
   }
+  
+}
   function atualizaCronometro(){
      for (let i=0;i < contadores.length; i++){
        contadores[i].textContent = calculaTempo(tempos[i]);
@@ -47,8 +51,9 @@ function calculaTempo(tempoObjetivo) {
 }
   function comecaCronometro(){ 
     atualizaCronometro();
-      setInterval(atualizaCronometro, 1000);
-
+    setInterval(atualizaCronometro, 1000);
+      comecaCronometro();
+      
 }
 
  comecaCronometro();        
